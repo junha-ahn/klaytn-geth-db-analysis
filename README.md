@@ -6,15 +6,17 @@ Dependency
 - https://github.com/klaytn/klaytn
 - https://github.com/ian0371/homi-local
 
-## Output Directory
+## Output
 
-```
-├── db_extract.txt
+```shell
+├── db_extract.txt # DB extract
+├── db_extract.md # descrition
 └── db
     ├── 0_genesis_setup
     ├── 1_mine_1_block
     └── 4_mine_4_block
 ```
+> [db_extract.md](./db_extract.md)
 
 ## Extract DB
 
