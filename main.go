@@ -106,13 +106,13 @@ func main() {
 	dirs := getDirs("./db")
 
 	for _, dir := range dirs {
-		dbEntries := getDirs("./db/" + dir + "/output/cn1/data/klay/chaindata")
+		path := "./db/" + dir + "/cn1/data/klay/chaindata"
+		dbEntries := getDirs(path)
 		fmt.Println("---------------------------------------------------")
 		fmt.Println("> Found directories: " + dir)
 		for _, dbEntry := range dbEntries {
 			fmt.Println(">>>> Found DB Entry: " + dbEntry)
-			dbEntryPath := "./db/" + dir + "/output/cn1/data/klay/chaindata/" + dbEntry
-			readDB(dbEntryPath, getDBEntryType(dbEntry))
+			readDB(path + "/" + dbEntry, getDBEntryType(dbEntry))
 		}
 	}
 }

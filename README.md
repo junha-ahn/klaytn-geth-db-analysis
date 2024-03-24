@@ -9,7 +9,8 @@ Dependency
 ## Output Directory
 
 - 0_genesis_setup
--
+- 1_mine_1_block
+- 4_mine_4_block
 
 ## Extract DB
 
