@@ -2,7 +2,7 @@ module github.com/junha-ahn/klaytn-geth-db-analysis
 
 go 1.22.0
 
-require github.com/syndtr/goleveldb v1.0.1-0.20210819022825-2ae1ddf74ef7
+require github.com/syndtr/goleveldb v1.0.1-0.20210819022825-2ae1ddf74ef7 // indirect
 
 require (
 	github.com/AndreasBriese/bbloom v0.0.0-20190306092124-e2d15f34fcf9 // indirect
@@ -43,7 +43,7 @@ require (
 	golang.org/x/net v0.17.0 // indirect
 	golang.org/x/sys v0.15.0 // indirect
 	golang.org/x/tools v0.6.0 // indirect
-	google.golang.org/protobuf v1.30.0 // indirect
+	google.golang.org/protobuf v1.33.0 // indirect
 	honnef.co/go/tools v0.0.1-2020.1.4 // indirect
 )
 
