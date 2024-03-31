@@ -70,7 +70,7 @@ $ git clone https://github.com/klaytn/klaytn.git
 
 #### 6. Setup Genesis Chaindata
 ```shell
-/klaytn/homi-local $ homi setup --cn-num 1 local
+/klaytn/homi-local $ homi setup --cn-num 1 --funding-addr ${address} local
 /klaytn/homi-local $ ./run setup
 ```
 > More details from [homi-local](https://github.com/ian0371/homi-local)

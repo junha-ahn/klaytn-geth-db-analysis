@@ -1,0 +1,28 @@
+=============== Mar 31, 2024 (KST) ===============
+21:52:13.259710 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+21:52:13.268426 db@open opening
+21:52:13.268628 version@stat F·[] S·0B[] Sc·[]
+21:52:13.270041 db@janitor F·2 G·0
+21:52:13.270051 db@open done T·1.615ms
+21:52:13.365303 db@close closing
+21:52:13.365350 db@close done T·46.125µs
+=============== Mar 31, 2024 (KST) ===============
+21:52:37.661795 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+21:52:37.661850 version@stat F·[] S·0B[] Sc·[]
+21:52:37.661859 db@open opening
+21:52:37.661882 journal@recovery F·1
+21:52:37.661985 journal@recovery recovering @1
+21:52:37.663737 memdb@flush created L0@2 N·5 S·1KiB "H\xf4\x84..\x85\xcfJ,v1":"h\x00\x00..\x85\xcfJ,v2"
+21:52:37.663829 version@stat F·[1] S·1KiB[1KiB] Sc·[0.25]
+21:52:37.675247 db@janitor F·3 G·0
+21:52:37.675255 db@open done T·13.392166ms
+=============== Mar 31, 2024 (KST) ===============
+21:55:47.606931 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+21:55:47.607352 version@stat F·[1] S·1KiB[1KiB] Sc·[0.25]
+21:55:47.607363 db@open opening
+21:55:47.607392 journal@recovery F·1
+21:55:47.607555 journal@recovery recovering @3
+21:55:47.609674 memdb@flush created L0@5 N·1 S·215B "Las..der,v7":"Las..der,v7"
+21:55:47.609794 version@stat F·[2] S·1KiB[1KiB] Sc·[0.50]
+21:55:47.620777 db@janitor F·4 G·0
+21:55:47.620873 db@open done T·13.505333ms
