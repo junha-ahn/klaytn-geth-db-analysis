@@ -9,12 +9,13 @@ Dependency
 ## Output
 
 ```shell
-├── db_extract.txt # DB extract
 ├── db_extract.md # descrition
+└── extract
+    ├── 0_genesis_setup
+    └── 1_tx_broadcast
 └── db
     ├── 0_genesis_setup
-    ├── 1_mine_1_block
-    └── 4_mine_4_block
+    └── 1_tx_broadcast
 ```
 > [db_extract.md](./db_extract.md)
 
