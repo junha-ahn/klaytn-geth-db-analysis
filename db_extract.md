@@ -499,12 +499,18 @@ func (dbm *databaseManager) PutTrieNodeToBatch(batch Batch, hash common.ExtHash,
 
 **No Change**
 
-## DB Entry: statetrie (After 128 Block)
-
-<img width="728" alt="image" src="https://github.com/junha-ahn/klaytn-geth-db-analysis/assets/41976906/a9329602-d4c2-4a66-92d9-788c15e6d24b">
 > For statetrie, flush to DB every BlockInterval(=128)
 
-<img width="1416" alt="image" src="https://github.com/junha-ahn/klaytn-geth-db-analysis/assets/41976906/c30f025b-be6d-4435-8fa3-bfb991085f2e">
+# 2_129_block_mined Extract
 
-> Right Side: matches toAddress
+## DB Entry: statetrie
 
+```diff
++ [00a0106cfdd4eb1daee9fadc27bcb8504b9dbdcf4bae8877f242bc8e6d19f61c, f83ea03f3b91639cbb77c038e37d8967a68e36d9f3e0bc15b1bac249b2b51a8aa2cc859c01da0195446c3b15f9926687d2c40534fdb3fedd0b8bf430008001c0]
++ [2ffb37f17f34c9b54cd1882d31327570ea3c6b4acd880416a7ea5d81228ec7ef, f83ea03e5b33e27a71f3ac0bd42b16d1eef796f12a617bed91c4a2cf3ce386b91a6f6c9c01da8095446c3b15f9926687d2c40534fdb564eebe0b40e8008001c0]
++ [5f33454c77feb4342d275cda4bbe2bbc48390926707243a0fe00d8b9397a85e3, f8d180a0e8ae816088497c9d6c5cb8578b150dd58e705533999a11204b1fdf3543749be1a02ffb37f17f34c9b54cd1882d31327570ea3c6b4acd880416a7ea5d81228ec7ef808080a097fac60ef017377a7c40b138b0499e1ba5ff884e03c6a4d9525f3159bc7deb5ca05466a9cb1baf6a022bb7c79e4d2d49f71875626c9a2b19a8000246c4d90447e880a000a0106cfdd4eb1daee9fadc27bcb8504b9dbdcf4bae8877f242bc8e6d19f61c8080808080a0a37ed00e9b1ed642d9ec8bcf8d8b3ae078c71aee104337d756dd8b6c4746165280]
+
+# [preImagePrefix + ...,  tx.toAddress]
++ [7365637572652d6b65792df237bbd177e17e346d457ab92b5222a942017dbd345f28fb4aaa0a89ed4e2251, 8c53ffef58a4e677592354eba1f95b0ea777f968]
++ [a37ed00e9b1ed642d9ec8bcf8d8b3ae078c71aee104337d756dd8b6c47461652, f1a03237bbd177e17e346d457ab92b5222a942017dbd345f28fb4aaa0a89ed4e22518f01cd8088016345785d8a00008001c0]
+```
