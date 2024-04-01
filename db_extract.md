@@ -497,6 +497,14 @@ func (dbm *databaseManager) PutTrieNodeToBatch(batch Batch, hash common.ExtHash,
 
 ## DB Entry: statetrie
 
-No Change
+**No Change**
 
-> 0x95a13a5e23b815e732416e7f94d9958e0d312f1c1da6f893f547540c3b79bf49 는 from to로 정보를 이동했지만 왜 StateTrie에 변화가 없을까?
+## DB Entry: statetrie (After 128 Block)
+
+<img width="728" alt="image" src="https://github.com/junha-ahn/klaytn-geth-db-analysis/assets/41976906/a9329602-d4c2-4a66-92d9-788c15e6d24b">
+> For statetrie, flush to DB every BlockInterval(=128)
+
+<img width="1416" alt="image" src="https://github.com/junha-ahn/klaytn-geth-db-analysis/assets/41976906/c30f025b-be6d-4435-8fa3-bfb991085f2e">
+
+> Right Side: matches toAddress
+
